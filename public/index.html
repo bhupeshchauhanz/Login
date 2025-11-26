@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="login-container">
+    <div class="login-card">
+      <div class="header">
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Enter your credentials to access the system.</p>
+        <div class="demo-creds">Demo: <span class="code">admin</span> / <span class="code">1234</span></div>
+      </div>
+
+      <div id="login-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input id="username" type="text" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter your password">
+        </div>
+        <button id="login" class="btn-primary">Sign In</button>
+        <div id="result" class="message"></div>
+      </div>
+
+      <div id="success-view" class="success-view" style="display: none;">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+        <h2>Login Successful!</h2>
+        <p>Redirecting to dashboard...</p>
+      </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
